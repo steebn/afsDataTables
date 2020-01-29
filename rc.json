@@ -8,23 +8,23 @@
             "type": "ONERROR"
         },
         "deleteJobAfterRun": false,
-        "ibfsId": "S2621be25s7e1as480csa720sbd69d662733b",
+        "ibfsId": null,
         "ibfsPath": "IBFS:/WFC/Repository/Team_Services_IA/HR_Payroll_Reports/Schedule/Stores",
         "summary": "",
         "name": "12365_Tenure_Report.sch",
-        "id": "S2621be25s7e1as480csa720sbd69d662733b",
+        "id": null,
         "priority": 3,
         "noReportErrorLevel": "D",
-        "owner": "smhall",
+        "owner": "",
         "active": true,
         "description": "12365 Tenure Report"
     },
     "timeInfoFactoryList": [{
         "timeInfoOnce": {
-            "id": "I46bfa081ie0a5i4e8biaf31if476c1ac259b",
+            "id": "",
             "name": "",
             "description": "",
-            "nextRunTime": "2030/01/29 15:09:00",
+            "nextRunTime": null,
             "startTime": "2030/01/29 15:09:00",
             "disabled": false,
             "type": 0
@@ -32,7 +32,7 @@
     }],
     "taskFactoryList": [{
         "taskStandardReport": {
-            "id": "T696a1f6et9840t41c5t8fc4tc083fde860f2",
+            "id": "",
             "description": "12365",
             "disabled": false,
             "reportName": "storeTenureReport_CurrentYear",
@@ -40,41 +40,41 @@
             "procedureId": "74109ca5_ace6_436a_a8a0_b6a4ba2b074b",
             "taskRetry": null,
             "type": 1,
-            "dataPreparation": false,
+
             "burst": false,
             "sendFormat": "%DEFAULT%",
-            "firstPreProcessingProcedure": "",
-            "secondPreProcessingProcedure": "",
             "firstPostProcessingProcedure": "",
+            "firstPreProcessingProcedure": "",
             "secondPostProcessingProcedure": "",
+            "secondPreProcessingProcedure": "",
             "parameterList": [{
                 "name": "DIM_ACCTNO",
                 "value": "12365",
-                "amperParameter": null,
+
                 "useDefaultValue": false,
-                "type": 1,
-                "burstByValues": false,
-                "burstByValuesWithPrePost": false
+                "type": 1
+
+
             }],
             "serverName": "EDASERVE",
             "execId": "biuser",
-            "execPassword": "",
-            "allowFormatList": null,
+            "execPassword": null,
+
             "formatInFex": true,
             "reportLanguageCode": "",
             "warningFOCCodes": [""],
-            "domainHREF": "",
-            "folderHREF": "",
+
+            "folderHREF": "/WFC/Repository/Team_Services_IA/HR_Payroll_Reports/Reports/Tenure",
+
             "alert": null,
-            "alertEnabled": false,
-            "procedureDescription": null
+            "alertEnabled": false
         },
         "existingPassword": true
     }],
     "distributionFactoryList": [{
         "distributionEmail": {
             "description": "12365",
-            "id": "D62b9da92dcd7dd475ddb7eedd354b35ddaf8",
+            "id": "",
             "disabled": false,
             "type": "EMAIL",
             "destination": {
@@ -88,8 +88,8 @@
                 "dynamicAddress": {
                     "serverName": "EDASERVE",
                     "procedureName": "team_services/dynamicdistro/aro_tenure_report ACCT_NO=12365",
-                    "userName": "biuser",
-                    "password": ""
+                    "userName": "biuser"
+
                 }
             },
             "sendingReportAsAttachment": true,
@@ -109,7 +109,7 @@
             "authEnabled": false,
             "authUserId": "",
             "authPassword": "",
-            "oauth2AuthenticationEnabled": false,
+            "oauth2AuthenticationEnabled": null,
             "oauth2AccessToken": null,
             "packetEmailType": "D"
         },
