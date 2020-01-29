@@ -1,0 +1,112 @@
+{
+    "schedule": {
+        "notification": {
+            "addressForBriefNotification": "smhall@afstores.com",
+            "addressForFullNotification": "",
+            "from": "afsbi.notify@afstores.com",
+            "subject": "12365 Tenure Report",
+            "type": "ONERROR"
+        },
+        "deleteJobAfterRun": false,
+        "ibfsId": null,
+        "ibfsPath": "IBFS:/WFC/Repository/Team_Services_IA/HR_Payroll_Reports/Schedule/Stores",
+        "summary": "",
+        "name": "12365_Tenure_Report.sch",
+        "id": null,
+        "priority": 3,
+        "noReportErrorLevel": "D",
+        "owner": "",
+        "active": true,
+        "description": "12365 Tenure Report"
+    },
+    "timeInfoFactoryList": [{
+        "timeInfoOnce": {
+            "nextRunTime": null,
+            "name": "",
+            "id": "",
+            "type": 0,
+            "startTime": "2030/01/29 15:09:00",
+            "disabled": false,
+            "description": ""
+        }
+    }],
+    "taskFactoryList": [{
+        "taskStandardReport": {
+            "alert": null,
+            "folderHREF": "/WFC/Repository/Team_Services_IA/HR_Payroll_Reports/Reports/Tenure",
+            "procedureDescription": null,
+            "alertEnabled": false,
+            "serverName": "EDASERVE",
+            "execId": "biuser",
+            "execPassword": null,
+            "parameterList": [{
+                "name": "DIM_ACCTNO",
+                "value": "12365",
+                "type": 1,
+                "useDefaultValue": false
+            }],
+            "burst": false,
+            "formatInFex": true,
+            "sendFormat": "%DEFAULT%",
+            "firstPostProcessingProcedure": "",
+            "firstPreProcessingProcedure": "",
+            "secondPostProcessingProcedure": "",
+            "secondPreProcessingProcedure": "",
+            "id": "",
+            "type": 1,
+            "description": "12365",
+            "disabled": false,
+            "procedureId": "74109ca5_ace6_436a_a8a0_b6a4ba2b074b",
+            "procedureName": "/WFC/Repository/Team_Services_IA/HR_Payroll_Reports/Reports/Tenure/storeTenureReport_CurrentYear.fex",
+            "reportName": "storeTenureReport_CurrentYear",
+            "taskRetry": null,
+            "reportLanguageCode": "",
+            "warningFOCCodes": [""]
+        },
+        "existingPassword": true
+    }],
+    "distributionFactoryList": [{
+        "distributionEmail": {
+            "authEnabled": false,
+            "authPassword": "",
+            "oauth2AuthenticationEnabled": null,
+            "oauth2AccessToken": null,
+            "authUserId": "",
+            "inlineMessage": "Please see attachment(s).",
+            "inlineMessageReportPath": "",
+            "inlineReportMessage": false,
+            "inlineTaskIndex": 0,
+            "mailFrom": "Associated Food Stores, Inc.",
+            "mailReplyAddress": "noreply@afstores.com",
+            "mailServerName": "sendmail.afstores.com",
+            "mailSubject": "&DIM_ACCTNO Tenure Report",
+            "sendingReportAsAttachment": true,
+            "sslEnabled": false,
+            "tlsEnabled": false,
+            "zipFileName": "",
+            "zipResult": false,
+            "destination": {
+                "dynamicAddress": {
+                    "procedureName": "team_services/dynamicdistro/aro_tenure_report ACCT_NO=12365",
+                    "serverName": "EDASERVE",
+                    "userName": "biuser"
+                },
+                "distributionList": "",
+                "distributionListFullPath": "",
+                "distributionFile": "",
+                "singleAddress": "",
+                "singleCcAddress": "",
+                "singleBccAddress": "",
+                "type": "DYNAMIC_ADDRESS"
+            },
+            "id": "",
+            "type": "EMAIL",
+            "disabled": false,
+            "packetEmailType": "D",
+            "zipThreshold": -1,
+            "description": "12365"
+        },
+        "existingDynamicAddressBookPassword": true,
+        "existingPassword": false
+    }]
+}
